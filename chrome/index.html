@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Postman</title>
+    <title>LCP Postman</title>
     <link rel="stylesheet" type="text/css" href="css/custom-theme/jquery-ui-1.9.2.custom.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-modal.css"/>
@@ -98,6 +98,7 @@
                 <li data-id="basicAuth">Basic Auth</li>
                 <li data-id="digestAuth">Digest Auth</li>
                 <li data-id="oAuth1">OAuth 1.0</li>
+                <li data-id="lcpAuth">LCP Signing</li>
             </ul>
             <div id="environment-selector-wrapper">
                 <div id="environment-quicklook-wrapper">
@@ -363,6 +364,22 @@
                     <h4>Note</h4>
                     If auto addition is enabled, OAuth parameters will be added when you send the request
                 </div>
+            </div>
+            <div id="request-helper-lcpAuth" class="request-helpers">
+                <div class="request-helper-form-container">
+                    <form class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label">API Key ID</label>
+                            <div class="controls">
+                                <input type="text" id="request-helper-lcpAuth-apiKeyID" class="clean-input"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">API Key</label>
+                            <div class="controls">
+                                <input type="text" id="request-helper-lcpAuth-apiKey" class="clean-input"/>
+                            </div>
+                        </div>
             </div>
         </div>
 
