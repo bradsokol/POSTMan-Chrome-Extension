@@ -28,6 +28,9 @@ pm.helpers = {
         else if (type === 'digest') {
             this.digest.process();
         }
+        else if (type === 'lcpAuth') {
+            this.lcpAuth.process();
+        }
         return false;
     },
 
@@ -205,6 +208,12 @@ pm.helpers = {
             pm.request.headers = headers;
             $('#headers-keyvaleditor').keyvalueeditor('reset', headers);
             pm.request.openHeaderEditor();
+        }
+    },
+
+    lcpAuth: {
+        process: function () {
+            alert('lcpAuth process!');
         }
     },
 
